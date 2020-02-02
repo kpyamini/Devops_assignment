@@ -3,18 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Building...'
+                build 'Project CI'
             }
         }
-        stage('test') {
-             steps {
-                  echo 'Testing...'
-                  }
-             }
-        stage('deploy') {
-             steps {
-                  echo 'Deploying...'
-                  }
-            }
     }
 }
